@@ -1,0 +1,95 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.main {
+  width: 100%;
+  height: 100vh;
+  background: linear-gradient(#000000, #040838);
+  display: flex;
+  justify-content: space-between;
+}
+
+.lantern {
+  border-radius: 4px;
+  background: linear-gradient(#ff9f05 70%, #eee84a);
+  display: inline-flex;
+  margin: 2%;
+  box-shadow: rgba(248, 234, 81, 0.658) 0px 1px 2px, rgba(248, 234, 81, 0.658) 0px -6px 15px, rgba(248, 234, 81, 0.658) 0px 2px 3px, rgba(248, 234, 81, 0.658) 0px 6px 6px;
+}
+
+#first {
+  width: 4%;
+  height: 10%;
+  background: linear-gradient(#ff9f05 50%, #eee84a);
+  animation: fly 10s linear infinite reverse;
+}
+#second {
+  width: 2%;
+  height: 5%;
+  animation: fly2 12s linear infinite reverse;
+}
+#third {
+  width: 3%;
+  height: 8%;
+  background: linear-gradient(#ff9f05 60%, #eee84a);
+  animation: fly 15s linear infinite reverse;
+}
+#fourth {
+  width: 2%;
+  height: 5%;
+  animation: fly2 12s linear infinite reverse;
+}
+#fifth {
+  width: 2%;
+  animation: fly2 12s linear 2s infinite reverse;
+  height: 5%;
+}
+#sixth {
+  width: 3%;
+  height: 8%;
+  background: linear-gradient(#ff9f05 60%, #eee84a);
+  animation: fly 15s linear infinite reverse;
+}
+#seventh {
+  width: 3%;
+  height: 8%;
+  animation: fly 12s linear infinite reverse;
+  background: linear-gradient(#ff9f05 60%, #eee84a);
+}
+#eighth {
+  width: 4%;
+  height: 10%;
+  background: linear-gradient(#ff9f05 50%, #eee84a);
+  animation: fly 10s linear infinite reverse;
+}
+#ninth {
+  width: 2%;
+  animation: fly2 12s linear 3s infinite reverse;
+  height: 5%;
+}
+#tenth {
+  width: 4%;
+  height: 10%;
+  background: linear-gradient(#ff9f05 50%, #eee84a);
+  animation: fly 10s linear infinite reverse;
+}
+
+@keyframes fly {
+  0% {
+    transform: translateY(0%);
+    display: none;
+  }
+  100% {
+    transform: translateY(1200%);
+  }
+}
+@keyframes fly2 {
+  0% {
+    transform: translateY(0%);
+  }
+  100% {
+    transform: translateY(1600%);
+  }
+}
